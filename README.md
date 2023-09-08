@@ -21,6 +21,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Filter schedules based on retured/unretired state
 - Deploy front-end site to [Netlify](https://ornate-gingersnap-326342.netlify.app/) (will not work unless local API server is running)
 - Updates to API server found [here](https://github.com/richhastings/blueprism-api-server)
+  - Change port so it doesn't clash with front end
+  - Change file extensions in order to run server
 
 ## Additional work to improve if given more time
 
