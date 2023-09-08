@@ -30,8 +30,8 @@ const SchedulesList = ({ schedules, handleClick, activeSchedule }: any) => {
 
   return (
     <div className="bg-gray-200">
-      <div className="sticky top-0 flex justify-between items-center p-4 border-b border-gray-600 bg-gray-200">
-        <h1 className="text-3xl">Schedules</h1>
+      <div className="sticky top-0 2xl:flex 2xl:justify-between items-center p-4 border-b border-gray-600 bg-gray-200">
+        <h1 className="text-3xl mb-2 2xl:mb-0">Schedules</h1>
         <div className="space-x-2">
           {['all', 'unretired', 'retired'].map((filter) => (
             <Button
