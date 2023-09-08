@@ -17,13 +17,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Further work completed
 
-- Basic UI based on wireframes
+- Basic UI based on wireframes with color-coded schedule logs
 - Filter schedules based on retured/unretired state
 - Deploy front-end site to [Netlify](https://ornate-gingersnap-326342.netlify.app/)
 
-## Additional work to improve (not completed)
+## Additional work to improve if given more time
 
 - Add functionality to retire/unretire schedules by making post requests to the API.
 - Deploy API server and fetch from remote API (not localhost)
 - Build application to designs and set up Storybook
+- Consider adding mobile menu functionality to contain schedule list
+- Improve layout of schedule logs on mobile
 - Add unit tests
