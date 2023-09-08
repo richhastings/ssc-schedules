@@ -3,7 +3,6 @@ import Button from './Button'
 import SchedulesListItem from './SchedulesListItem'
 
 const SchedulesList = ({ schedules, handleClick, activeSchedule }: any) => {
-  if (!schedules.length) return
   const [activeFilter, setActiveFilter] = useState('unretired')
   const [filteredSchedules, setFilteredSchedules] = useState([])
 

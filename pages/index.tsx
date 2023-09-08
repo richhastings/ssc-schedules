@@ -29,11 +29,13 @@ const Home = () => {
     getData()
   }, [])
 
+  if (!schedules.length) return
+
   return (
     <div className="grid grid-cols-4">
       <div className="col-span-1 h-screen overflow-auto border-r border-gray-600">
         <SchedulesList
-          handleClick={(id) => updateScheduleView(id)}
+          handleClick={(id: number) => updateScheduleView(id)}
           schedules={schedules}
           activeSchedule={activeSchedule}
         />
