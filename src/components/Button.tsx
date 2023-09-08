@@ -1,4 +1,4 @@
-const Button = ({ children, isActive, onClick }) => (
+const Button = ({ children, isActive, onClick }: any) => (
   <button
     onClick={onClick}
     className={`border border-gray-600 capitalize p-2 text-xs ${

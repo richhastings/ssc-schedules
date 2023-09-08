@@ -1,4 +1,4 @@
-const SchedulesListItem = ({ label, value }) => (
+const SchedulesListItem = ({ label, value }: any) => (
   <div>
     <div className="text-xs ">{label}:</div>
     <div>{value}</div>
