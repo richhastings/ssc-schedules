@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - Basic UI based on wireframes with color-coded schedule logs
 - Filter schedules based on retured/unretired state
-- Deploy front-end site to [Netlify](https://ornate-gingersnap-326342.netlify.app/)
+- Deploy front-end site to [Netlify](https://ornate-gingersnap-326342.netlify.app/) (will not work unless local API server is running)
 
 ## Additional work to improve if given more time
 
