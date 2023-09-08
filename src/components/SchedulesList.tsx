@@ -26,7 +26,7 @@ const SchedulesList = ({ schedules, handleClick, activeSchedule }: any) => {
 
   useEffect(() => {
     setInitialScheduleView()
-  }, [])
+  }, []) // eslint-disable-line
 
   return (
     <div className="bg-gray-200">
