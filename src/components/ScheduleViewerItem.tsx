@@ -1,17 +1,17 @@
 import { format } from 'date-fns'
 
-const ScheduleViewerSubItem = ({ label, value, className }) => (
+const ScheduleViewerSubItem = ({ label, value, className }: any) => (
   <div className={className}>
     <div className="text-xs text-gray-600">{label}:</div>
     <div>{value}</div>
   </div>
 )
 
-const ScheduleViewerItem = ({ data }) => {
+const ScheduleViewerItem = ({ data }: any) => {
   const startTime = format(new Date(data.startTime), 'do LLLL yyyy hh:mm:ss')
   const endTime = format(new Date(data.endTime), 'do LLLL yyyy hh:mm:ss')
 
-  const backgroundMap = {
+  const backgroundMap: any = {
     Completed: 'bg-green-600',
     Terminated: 'bg-red-600',
     Running: 'bg-yellow-600',

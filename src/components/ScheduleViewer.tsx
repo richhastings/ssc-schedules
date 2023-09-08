@@ -1,6 +1,6 @@
 import ScheduleViewerItem from './ScheduleViewerItem'
 
-const ScheduleViewer = ({ scheduleLogs, activeSchedule }) => {
+const ScheduleViewer = ({ scheduleLogs, activeSchedule }: any) => {
   if (!scheduleLogs.length)
     return (
       <div className="flex w-full h-full justify-center items-center">
@@ -15,7 +15,7 @@ const ScheduleViewer = ({ scheduleLogs, activeSchedule }) => {
       </div>
       <div className="p-4 space-y-4">
         {scheduleLogs &&
-          scheduleLogs.map((log, i) => (
+          scheduleLogs.map((log: any, i: number) => (
             <ScheduleViewerItem key={`item${i}`} data={log} />
           ))}
       </div>

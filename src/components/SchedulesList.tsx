@@ -6,20 +6,22 @@ const SchedulesList = ({ schedules, handleClick, activeSchedule }: any) => {
   const [activeFilter, setActiveFilter] = useState('unretired')
   const [filteredSchedules, setFilteredSchedules] = useState([])
 
-  const filterMap = {
+  const filterMap: any = {
     all: schedules,
-    unretired: schedules.filter((schedule) => !schedule.isRetired),
-    retired: schedules.filter((schedule) => schedule.isRetired),
+    unretired: schedules.filter((schedule: any) => !schedule.isRetired),
+    retired: schedules.filter((schedule: any) => schedule.isRetired),
   }
 
-  const handleFilter = (filter) => {
+  const handleFilter = (filter: any) => {
     setActiveFilter(filter)
     setFilteredSchedules(filterMap[filter])
   }
 
   const setInitialScheduleView = async () => {
     schedules.length &&
-      setFilteredSchedules(schedules.filter((schedule) => !schedule.isRetired))
+      setFilteredSchedules(
+        schedules.filter((schedule: any) => !schedule.isRetired)
+      )
   }
 
   useEffect(() => {

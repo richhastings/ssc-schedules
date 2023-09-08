@@ -11,7 +11,7 @@ const Home = () => {
 
   const updateScheduleView = (id: number) => {
     setActiveScheduleLogs(
-      scheduleLogs.filter((scheduleLog) => scheduleLog.scheduleId === id)
+      scheduleLogs.filter((scheduleLog: any) => scheduleLog.scheduleId === id)
     )
     setActiveSchedule(id)
   }
@@ -43,7 +43,9 @@ const Home = () => {
       <div className="col-span-3 sticky top-0 overflow-auto h-screen">
         <ScheduleViewer
           activeSchedule={
-            schedules.filter((schedule) => schedule.id === activeSchedule)[0]
+            schedules.filter(
+              (schedule: any) => schedule.id === activeSchedule
+            )[0]
           }
           scheduleLogs={activeScheduleLogs}
         />
